@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/81478abc59.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;800&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="images/paint.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Sketch</title>
+</head>
+<body>
+
+    <h1>Etch a Sketch</h1>
+
+    <main>
+        <div class="controls">
+            <div>
+                <input id="colorPicker" type="color" value="#F0A500" />
+            </div>
+            
+            <div>
+                <label for="gridSize">Grid <span id="displaySize">8 x 8</span></label> <br>
+                <input type="range" id="gridSize" name="gridSize" 
+                       min="4" max="32" value="8" step="2">       
+            </div>
+            <div>
+                <button id="clear">Clear</button>
+            </div>     
+        </div>
+    
+        <div class="grid" id="grid">
+    
+        </div>
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 SrChezz <a href="https://github.com/SrChezz" class="icon fab fa-github"></a></p>
+    </footer>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
